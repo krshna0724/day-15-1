@@ -1,0 +1,92 @@
+@font-face {
+    font-family: headerFont;
+    src: url(ComputoMonospace-p73xO.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #ecf0f3;
+}
+
+h1 {
+    margin-top: 5%;
+    color: #1746A2;
+    margin-bottom: 30px;
+    font-family: headerFont;
+}
+
+p {
+    color: #5F9DF7;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.container{
+    height: 100vh;
+    background-color: #ecf0f3;
+}
+
+.calculator{
+    margin: auto;
+    background-color: #f8ade6;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px white,
+                      5px 5px 12px rgba(0, 0, 0, 0.16);
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+}
+
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px rgb(225, 39, 39),
+                       5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+button{
+    height: 48px; 
+    width: 48px;
+    color: #50c1ee;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px white,
+                 5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+#clear, #delete, #equal  {
+    color: #F07B3F;
+}
+
+#add, #subtract, #multiply, #divide, #modulus {
+    color: #6C4AB6;
+}
+
+
+.equalBtn{
+    width: 115px;
+    border-radius: 40px;
+}
